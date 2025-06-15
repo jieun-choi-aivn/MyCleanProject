@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C226763DAA878EFBC1877A32 /* Pods_MyCleanProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 214D17E135F835B801C6FBE8 /* Pods_MyCleanProject.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		F23647AA2DFD2A0C0002723F /* MyCleanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCleanProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0352B21B0909721BA135BCF4 /* Pods-MyCleanProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCleanProject.debug.xcconfig"; path = "Target Support Files/Pods-MyCleanProject/Pods-MyCleanProject.debug.xcconfig"; sourceTree = "<group>"; };
+		214D17E135F835B801C6FBE8 /* Pods_MyCleanProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCleanProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		776D8D195D0D0F31BCB38C18 /* Pods-MyCleanProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCleanProject.release.xcconfig"; path = "Target Support Files/Pods-MyCleanProject/Pods-MyCleanProject.release.xcconfig"; sourceTree = "<group>"; };
+		F23647AA2DFD2A0C0002723F /* MyCleanProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = MyCleanProject.app; path = "/Users/jechoi/study/MyCleanProject/build/Debug-iphoneos/MyCleanProject.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,26 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C226763DAA878EFBC1877A32 /* Pods_MyCleanProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17A5381EA8541367A199F1F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0352B21B0909721BA135BCF4 /* Pods-MyCleanProject.debug.xcconfig */,
+				776D8D195D0D0F31BCB38C18 /* Pods-MyCleanProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		98FE4142B2011FC6F2D2E5E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				214D17E135F835B801C6FBE8 /* Pods_MyCleanProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F23647A12DFD2A0C0002723F = {
 			isa = PBXGroup;
 			children = (
 				F23647AC2DFD2A0C0002723F /* MyCleanProject */,
-				F23647AB2DFD2A0C0002723F /* Products */,
+				17A5381EA8541367A199F1F4 /* Pods */,
+				98FE4142B2011FC6F2D2E5E7 /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		F23647AB2DFD2A0C0002723F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F23647AA2DFD2A0C0002723F /* MyCleanProject.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +84,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F23647C02DFD2A0D0002723F /* Build configuration list for PBXNativeTarget "MyCleanProject" */;
 			buildPhases = (
+				ED6409A4D9A33F9CDCAA0B9D /* [CP] Check Pods Manifest.lock */,
 				F23647A62DFD2A0C0002723F /* Sources */,
 				F23647A72DFD2A0C0002723F /* Frameworks */,
 				F23647A82DFD2A0C0002723F /* Resources */,
+				D511EFD334C22B4049806197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +98,6 @@
 				F23647AC2DFD2A0C0002723F /* MyCleanProject */,
 			);
 			name = MyCleanProject;
-			packageProductDependencies = (
-			);
 			productName = MyCleanProject;
 			productReference = F23647AA2DFD2A0C0002723F /* MyCleanProject.app */;
 			productType = "com.apple.product-type.application";
@@ -108,7 +127,7 @@
 			mainGroup = F23647A12DFD2A0C0002723F;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F23647AB2DFD2A0C0002723F /* Products */;
+			productRefGroup = F23647A12DFD2A0C0002723F;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -127,6 +146,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D511EFD334C22B4049806197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCleanProject/Pods-MyCleanProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyCleanProject/Pods-MyCleanProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyCleanProject/Pods-MyCleanProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED6409A4D9A33F9CDCAA0B9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyCleanProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F23647A62DFD2A0C0002723F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +201,7 @@
 /* Begin XCBuildConfiguration section */
 		F23647C12DFD2A0D0002723F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0352B21B0909721BA135BCF4 /* Pods-MyCleanProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -168,6 +230,7 @@
 		};
 		F23647C22DFD2A0D0002723F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776D8D195D0D0F31BCB38C18 /* Pods-MyCleanProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
